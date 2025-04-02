@@ -1,0 +1,242 @@
+/*CSS Reset Rule*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Courier New", sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+nav a {
+    color: white !important;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #23272b;; 
+}
+
+
+#nav {
+    background: #71BBB2 !important;
+}
+
+#icon {
+    width: 150px;
+}
+
+#social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+#social-icon:hover {
+    opacity: 1;
+    transform: scale(1.1); 
+}
+
+
+#landing  {
+    scroll-margin-top: 5rem;
+}
+
+#projects{
+    scroll-margin-top: -1rem;
+}
+
+#tools{
+    scroll-margin-top: 5rem;
+    min-height: 100vh;
+}
+
+#contact{
+    scroll-margin-top: 5rem;
+    min-height: 50vh;
+}
+
+#footer {
+    background: #27445D !important;
+}
+
+#btn {
+    background: #71BBB2;
+}
+
+
+/* Facebook */
+#social-icon[alt="Facebook"]:hover {
+    filter: invert(24%) sepia(93%) saturate(2256%) hue-rotate(201deg) brightness(92%) contrast(90%);
+}
+
+/* LinkedIn */
+#social-icon[alt="LinkedIn"]:hover {
+    filter: invert(16%) sepia(87%) saturate(6926%) hue-rotate(204deg) brightness(97%) contrast(110%);
+}
+
+/* GitLab */
+#social-icon[alt="GitLab"]:hover {
+    filter: invert(21%) sepia(83%) saturate(7441%) hue-rotate(149deg) brightness(102%) contrast(98%);
+}
+
+/* GitHub */
+#social-icon[alt="GitHub"]:hover {
+    filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(256deg) brightness(108%) contrast(107%);
+}
+
+#myname {
+    font-size: 2rem;
+}
+
+/*Resume Button*/
+.view-resume-btn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: #4f9798;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+/*Landing*/
+#landing {
+    background-color: #f8f8f8;
+}
+
+#MGVA {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#description {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #008080; 
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #006666;
+}
+
+/*Projects*/
+
+#projects {
+    padding-top: 5rem;
+    margin-bottom:3rem;
+}
+
+#card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9 {
+    border: solid 1px teal;
+    background: #2a4d43;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+/*Tools*/
+#tools {
+    background-color: #f8f8f8;
+}
+
+.tool-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Grid layout */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tool-icon {
+    width: 100%; /* Icons fill grid cells */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.tool-icon:hover {
+    transform: scale(1.1);
+}
+
+/*Footer*/
+footer {
+    background-color: #71BBB2;
+    color: white;
+    padding: 20px 0;
+    font-family: monospace; 
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+footer {
+    border-top: 1px solid #495057;
+}
+
+footer {
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #23272b;
+}
