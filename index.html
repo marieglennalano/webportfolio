@@ -47,11 +47,12 @@
 		<div class="container-fluid text-center">
 
 			<!-- Start of Landing -->
-			 <div id="landing" class="container-fluid py-5 d-flex align-items-center">
+			<div id="landing" class="container-fluid py-5 d-flex align-items-center">
 			 	<div class="row justify-content-center mt-0 mt-md-5">
 			 		<div class="col-12 col-lg-4 text-center mt-4">
 			 			<img src="./Images/MGVA.png" class="img-fluid rounded-circle" alt="MGVA" id="MGVA">
 			 		</div>
+
 			 		<div id="description" class="col-md-6 col-sm-12">
 			 			<h1 id="myname" class="border-bottom border-dark text-nowrap fw-bolder">MARIE GLENN ALANO</h1>
 			 			<h3 class="fw-bolder">Full Stack Web Developer | Design Engineer</h3>
@@ -63,7 +64,7 @@
 			 			</a>
 			 		</div>
 			 	</div>
-			 </div>
+			</div>
 			<!-- End of Landing -->
 
 			<!-- Start of My Project -->
@@ -168,9 +169,9 @@
 			<!-- End of My Project  -->
 		
 			<!-- Start of Tools -->
-			<div id="tools" class="container py-2 mt-5">
+			<div id="tools" class="container min-vh-lg-100 min-vh-md-80 min-vh-sm-60 py-2 mt-5">
 				<h1 class="text-center mb-4">TOOLS</h1>
-				<div class="row justify-content-center">
+				<div class="row d-flex d-grid justify-content-center">
 					<div class="col-md-6 mb-4">
 						<div class="tool-section">
 							<h2>FRONT END</h2>
@@ -182,6 +183,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="col-md-6 mb-4">
 						<div class="tool-section">
 							<h2>MERN</h2>
@@ -193,6 +195,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="col-md-6 mb-4">
 						<div class="tool-section">
 							<h2>OTHER TOOLS</h2>
@@ -209,7 +212,7 @@
 			<!-- End of Tools -->
 
 			<!-- Start of Contact -->
-			<div id="contact" class="container">
+			<div id="contact" class="container min-vh-lg-100 min-vh-md-80 min-vh-sm-60">
 				<h1 class="text-center mb-4">CONTACT</h1>
 				<div class="row justify-content-center">
 					<div class="col-md-6">
@@ -217,9 +220,11 @@
 							<div class="mb-3">
 								<input type="text" class="form-control" placeholder="First Name M.I. Last Name">
 							</div>
+
 							<div class="mb-3">
 								<input type="email" class="form-control" placeholder="Email">
 							</div>
+
 							<div class="mb-3">
 								<textarea class="form-control" rows="5" placeholder="Message"></textarea>
 							</div>
@@ -231,9 +236,30 @@
 									<a href="https://gitlab.com/"><img src="./Images/gitlab.png" alt="GitLab" id="social-icon"></a>
 									<a href="https://github.com/"><img src="./Images/Github.png" alt="GitHub" id="social-icon"></a>
 								</div>
-								<button type="submit" id="btn" class="btn">Submit</button>
+
+									<button type="button" id="btn" class="btn" data-bs-toggle="modal" data-bs-target="#modalDiv">Submit</button>
+							</div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="modalDiv" tabindex="-1" aria-labelledby="modalDivLabel"aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="modalDiv"></h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+
+										<div class="modal-body text-dark">
+											<p>Thank you for reaching out! I’ve received your message and will get back to you as soon as possible.</p>
+										</div>
+
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										</div>
+									</div>
 								</div>
 							</div>
+							<!-- End of Modal -->
 						</form>
 					</div>
 				</div>

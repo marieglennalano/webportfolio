@@ -22,7 +22,6 @@ nav a:hover {
     background-color: #23272b;; 
 }
 
-
 #nav {
     background: #71BBB2 !important;
 }
@@ -55,13 +54,12 @@ nav a:hover {
 
 #tools{
     scroll-margin-top: 5rem;
-    min-height: 100vh;
+
 }
 
 #contact{
-    scroll-margin-top: 5rem;
-    min-height: 50vh;
-}
+    scroll-margin-top: 4rem;
+}   
 
 #footer {
     background: #27445D !important;
@@ -167,9 +165,6 @@ p {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    overflow: hidden;
-    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
@@ -178,8 +173,24 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Moves card up slightly */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
 .card-title {
     color: #007bff;
+}
+
+.card img:hover {
+    filter: brightness(85%);
+    transition: filter 0.3s ease-in-out;
 }
 
 .card-text {
@@ -201,13 +212,13 @@ p {
 
 .tool-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 10px;
     margin-top: 20px;
 }
 
 .tool-icon {
-    width: 100%; /* Icons fill grid cells */
+    width: 100%;
     height: auto;
     transition: transform 0.3s ease;
 }
